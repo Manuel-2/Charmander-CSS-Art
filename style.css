@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #ec5600;
+    --main-color-dark: #d64f01;
+    --background-color: rgb(218, 183, 109);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.torso {
+    background-color: var(--main-color);
+    width: 250px;
+    height: 270px;
+    border-radius: 91% 9% 62% 38% / 75% 41% 59% 25%;
+    position: relative;
+}
+
+.pansa {
+    position: absolute;
+    background-color: beige;
+    width: 205px;
+    height: 205px;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    top: 75px;
+    left: 65px;
+    z-index: 3;
+}
+
+.pansa-superior {
+    position: absolute;
+    background-color: beige;
+    width: 100px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    top: -5px;
+    left: 170px;
+    z-index: 50;
+}
+
+.fondo-izquierdo {
+    position: absolute;
+    background-color: var(--background-color);
+    width: 100px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    top: -5px;
+    left: 260px;
+    z-index: 1;
+}
+
+.braso-derecho {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    top: -5px;
+    left: 110px;
+    z-index: 5;
+}
+
+.dedos-d {
+    position: absolute;
+    background-color: none;
+    width: 50px;
+    height: 30px;
+    top: 144px;
+    left: 78px;
+}
+
+.braso-izquierdo {
+    position: absolute;
+    background-color: var(--main-color-dark);
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    top: -5px;
+    left: 200px;
+}
+
+.fondo-superior {
+    position: absolute;
+    background-color: var(--background-color);
+    width: 80px;
+    height: 60px;
+    top: 0px;
+    left: 30px;
+}
+
+.pierna-base {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 80px;
+    height: 250px;
+    transform: rotate(15deg);
+    border-radius: 0% 100% 46% 54% / 100% 9% 91% 0%;
+    top: 70px;
+    left: 55px;
+    z-index: 5;
+}
+
+.pie {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 35px;
+    height: 35px;
+    transform: rotate(-30deg);
+    top: 220px;
+    left: 30px;
+}
+
+.tobillo {
+    position: absolute;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 90px;
+    transform: rotate(-30deg);
+    top: 195px;
+    left: -3px;
+}
+
+.suelo-plano {
+    position: absolute;
+    background-color: var(--background-color);
+    width: 250px;
+    height: 50px;
+    transform: rotate(-15deg);
+    top: 234px;
+    left: -50px;
+}
+
+.pierna-base-izquierda {
+    position: absolute;
+    background-color: var(--main-color-dark);
+    width: 80px;
+    height: 250px;
+    transform: rotate(15deg);
+    border-radius: 0% 100% 46% 54% / 100% 9% 91% 0%;
+    top: 70px;
+    left: 150px;
+    z-index: 0;
+}
+
+.pie-izquierda {
+    position: absolute;
+    background-color: var(--main-color-dark);
+    width: 35px;
+    height: 35px;
+    transform: rotate(-30deg);
+    top: 220px;
+    left: 30px;
+}
+
+.tobillo-izquierda {
+    position: absolute;
+    background-color: var(--main-color-dark);
+    width: 50px;
+    height: 90px;
+    transform: rotate(-30deg);
+    top: 195px;
+    left: -3px;
+}
+
+.suelo-plano-izquierda {
+    position: absolute;
+    background-color: var(--background-color);
+    width: 250px;
+    height: 50px;
+    transform: rotate(-15deg);
+    top: 234px;
+    left: -50px;
+}
+
+.cola {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: 150;
+    top: -68px;
+    left: -135px;
+    z-index: 2;
+}
+
+.cola-fondo {
+    position: absolute;
+    width: 235px;
+    height: 250px;
+    background-color: var(--background-color);
+    border-radius: 76% 24% 49% 51% / 36% 11% 89% 64%;
+    top: -60px;
+    left: -125px;
+    z-index: 50;
+}
+
+.cola-fondo-2 {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    background-color: var(--background-color);
+    top: -100px;
+    left: -140px;
+    z-index: 3;
+}
+
+.cabeza {
+    position: absolute;
+    width: 150px;
+    height: 220px;
+    background-color: var(--main-color);
+    border-radius: 32% 68% 100% 0% / 6% 100% 0% 94%;
+    z-index: 10;
+    top: -150px;
+    left: 120px;
+    opacity: 1;
+}
+
+.boca {
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 55% 45% 46% 54% / 70% 0% 100% 30%;
+    width: 100px;
+    height: 155px;
+    top: 5px;
+    left: -38px;
+}
+
+.hocico {
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 48% 52% 47% 53% / 66% 0% 100% 34%;
+    width: 70px;
+    height: 70px;
+    top: 31px;
+    left: -50px;
+}
+
+.recorte-hocico {
+    width: 50px;
+    height: 80px;
+    background-color: var(--background-color);
+    border-radius: 48% 52% 47% 53% / 66% 0% 100% 34%;
+    z-index: 50;
+    position: absolute;
+    top: -148px;
+    left: 38px;
+    transform: rotate(35deg);
+    opacity: 1;
+}
+
+.fuego-centro {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 50;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    top: -10px;
+    left: -150px;
+    transform: rotate(-45deg);
+    opacity: 0.5;
+}
+
+.fuego-izquierda {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    z-index: 50;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    top: -10px;
+    left: -135px;
+    transform: rotate(-22.5deg);
+    opacity: 0.5;
+}
+
+.fuego-derecha {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    z-index: 50;
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+    top: -10px;
+    left: -165px;
+    transform: rotate(-67.5deg);
+    opacity: 0.5;
+}
